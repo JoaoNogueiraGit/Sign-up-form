@@ -110,8 +110,10 @@ body{
     width: 165px;
     background-color: #596D48;
     color: white;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 14px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #sign-in-button:hover{
@@ -138,7 +140,7 @@ input {
 }
 
 input:focus {
-    border-color: #596D48; 
+    border-color: #1c4fc8; 
     box-shadow: 0 0 5px rgba(89, 109, 72, 0.3);
 }
 
