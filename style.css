@@ -65,7 +65,7 @@ body{
     flex: 1;
 }
 
-.texr-para{
+.text-para{
     max-width: 700px;
     line-height: 1.5;
 }
@@ -79,17 +79,20 @@ body{
     align-items: center;
 }
 
-#form-container > #sign-in-form > div {
+#sign-in-form > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 0 0 calc(50% - 20px); 
+    min-width: 250px;
 }
 
 #sign-in-form{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 40px;
 }
 
 #button-container{
@@ -139,8 +142,14 @@ input:focus {
     box-shadow: 0 0 5px rgba(89, 109, 72, 0.3);
 }
 
+input:invalid{
+    border: 2px solid red;
+    color: red;
+}
+
 label {
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #4B5563;
