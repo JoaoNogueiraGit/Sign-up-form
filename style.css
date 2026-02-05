@@ -9,6 +9,7 @@ body{
     align-items: center;
     min-height: 100vh;  
     width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo-odin{
@@ -19,17 +20,20 @@ body{
     color: white;
     font-weight: 800;
     font-size: 3.5em;
+    font-family: 'Courier New', Courier, monospace;
     height: 160px;
 }
 
 #odin{
-    height: 150px;
+    height: 135px;
     width: auto;
+    padding: 5px;
 }
 
 #content{
     flex: 2; 
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     background-color: rgb(217, 217, 217);
 }
@@ -49,8 +53,30 @@ body{
     height: 100vh;
 }
 
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 40px;
+    font-size: 20px;
+    background-color: rgb(217, 217, 217);
+    flex: 1;
+}
+
+.texr-para{
+    max-width: 700px;
+    line-height: 1.5;
+}
+
 #form-container{
     background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form-container > #sign-in-form > div {
@@ -64,4 +90,59 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    flex: 1;
+}
+
+#sign-in-button{
+    border-radius: 8px;
+    height: 35px;
+    width: 165px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+#sign-in-button:hover{
+    background-color: rgb(89, 109, 72, 0.9);
+    cursor: pointer;
+}
+
+#log-in-link{
+    text-decoration: none;
+    color: black;
+}
+
+#log-in-link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px; 
+    outline: none;
+}
+
+input:focus {
+    border-color: #596D48; 
+    box-shadow: 0 0 5px rgba(89, 109, 72, 0.3);
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4B5563;
+    margin-bottom: 5px;
 }
